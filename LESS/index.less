@@ -146,9 +146,18 @@ html {
 	}
 	header{
 		font-family: @fontFamily;
-		font-weight: 800;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: flex-end;
+		
+		margin-bottom: 20px;
+		img{
+		max-width: 200px;
+		}
+		.account {
+			align-self: flex-start;
+		}
 	}
 
 	/*navigation*/
@@ -221,9 +230,7 @@ html {
 		color: black;
 	}
 	
-	p{
-		margin-left: 10px;
-	}
+
 	
 	h1 {
 		font-size: 10rem;
@@ -244,7 +251,7 @@ html {
 	.bestsellers{
 		margin-left: 5%;
 		display: grid;
-		grid-template-columns: repeat(4, .3fr);
+		grid-template-columns: repeat(5, .3fr);
 		grid-auto-rows: minmax(100px, auto);
 		row-gap: .5em;
 		column-gap: 1px; 
@@ -261,7 +268,16 @@ html {
 	figure img{
 		max-width: 150px;
 	}
-	
+	/*--variable--*/
+	p {
+font-family: @fontFamily;
+align-items: center;
+
+	}
+	.bookTitle{
+		font-weight: bold;
+	}
+
 	
 	footer{
 		display: flex;
